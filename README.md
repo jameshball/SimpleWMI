@@ -1,22 +1,20 @@
 # SimpleWMI
 💻😊 .NET library for the easy use of WMI features available in the System.Management library.
 
-# Table of Contents
-
-- [Purpose](#purpose)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Notable Links](#notable-links-from-msdn)
-  - [WMIQuery Functions](#wmiquery-functions)
-  - [WMI Constant Classes](#wmi-constant-classes)
-- [Credits](#credits)
-
 # Purpose
 SimpleWMI tries to overcome the cumbersome nature of using the System.Management library. Select queries are avoided and common WMI functions are made achievable in a single line of code, rather than several.
 
 I implemented this library to solve the problem I faced at work while developing a computer auditing program that involved having an abundance of meaningless code. This code repeated itself constantly and wasn't adaptable to any new WMI classes that I wanted to add in the future.
 
 SimpleWMI solves that problem by making the code much tidier, whilst still performing the required functions for a sophisticated program that needs to retrieve data from WMI classes.
+
+# Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Notable Links](#notable-links-from-msdn)
+  - [WMIQuery Functions](#wmiquery-functions)
+  - [WMI Constant Classes](#wmi-constant-classes)
+- [Credits](#credits)
 
 # Installation
 Download the SimpleWMI .dll from the releases tab and include it as a reference in your .NET 4.5+ project. After that, remember to include:
