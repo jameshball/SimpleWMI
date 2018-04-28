@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWMI", "SimpleWMI\SimpleWMI.csproj", "{FC3080F6-98A7-4084-A829-6F1D8EE43042}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWMIExample", "SimpleWMIExample\SimpleWMIExample.csproj", "{96895BCC-851F-4800-8F1C-8FC3FB98396E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FC3080F6-98A7-4084-A829-6F1D8EE43042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3080F6-98A7-4084-A829-6F1D8EE43042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3080F6-98A7-4084-A829-6F1D8EE43042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96895BCC-851F-4800-8F1C-8FC3FB98396E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96895BCC-851F-4800-8F1C-8FC3FB98396E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96895BCC-851F-4800-8F1C-8FC3FB98396E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96895BCC-851F-4800-8F1C-8FC3FB98396E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
