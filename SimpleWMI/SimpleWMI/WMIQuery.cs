@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimpleWMI
 {
-    class WMIQuery
+    public class WMIQuery
     {
         public static List<dynamic> GetAllObjects(string className)
         {
