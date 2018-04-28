@@ -18,12 +18,21 @@ namespace SimpleWMIExample
                 Console.WriteLine(item.Caption);
             }
 
-            //IEnumerable<object> results = processes.Where(s => s.Caption.ToLower().Contains("google"));
+            dynamic cpu = WMIQuery.GetObject("Win32_Processor");
+            Console.WriteLine(cpu.Name);
 
-            //foreach (dynamic item in results)
-            //{
-            //    Console.WriteLine(item.Caption);
-            //}
+            foreach (dynamic item in WMIQuery.GetAllObjects(Win32.VideoController))
+            {
+                //Wrapped in a try-catch because trying to write null values to console causes errors.
+                try
+                {
+                    Console.WriteLine(item.Name);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
 
             Console.Read();
         }
