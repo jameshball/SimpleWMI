@@ -10,9 +10,10 @@ namespace SimpleWMI
 {
     public class WMIQuery
     {
+        //This function is used to return all the objects within a ManagementObjectCollection as a list (so that it can be queried using LINQ).
         public static List<dynamic> GetAllObjects(string className)
         {
-            ManagementObjectCollection col = new ManagementObjectSearcher("SELECT * FROM Win32_" + className).Get();
+            ManagementObjectCollection col = new ManagementObjectSearcher("SELECT * FROM " + className).Get();
             List<dynamic> objects = new List<dynamic>();
 
             foreach (ManagementObject obj in col)
@@ -30,9 +31,10 @@ namespace SimpleWMI
             return objects;
         }
 
+        //This function is used to only get the first object in a ManagementObjectCollection for when only one object is expected (e.g. a CPU).
         public static dynamic GetObject(string className)
         {
-            ManagementObjectCollection col = new ManagementObjectSearcher("SELECT * FROM Win32_" + className).Get();
+            ManagementObjectCollection col = new ManagementObjectSearcher("SELECT * FROM " + className).Get();
 
             var currentObject = new ExpandoObject() as IDictionary<string, Object>;
 

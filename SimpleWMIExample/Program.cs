@@ -11,7 +11,7 @@ namespace SimpleWMIExample
     {
         static void Main(string[] args)
         {
-            IEnumerable<dynamic> googleProcesses = WMIQuery.GetAllObjects("Process").Where(s => s.Caption.ToLower().Contains("google"));
+            IEnumerable<dynamic> googleProcesses = WMIQuery.GetAllObjects(Win32.Process).Where(s => s.Caption.ToLower().Contains("google"));
 
             foreach (dynamic item in googleProcesses)
             {
