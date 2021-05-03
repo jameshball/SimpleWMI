@@ -128,4 +128,4 @@ The attribute name corresponds with the text after `Win32_` in the class name.
 The other two constant classes, `CIM` and `Msft` are formatted the same way, only the attribute name corresponds with the text after `CIM_` or `Msft_` respectively.
 
 # Credits
-**James Ball** - jhb119@ic.ac.uk
+**James Ball** - james@ball.sh
